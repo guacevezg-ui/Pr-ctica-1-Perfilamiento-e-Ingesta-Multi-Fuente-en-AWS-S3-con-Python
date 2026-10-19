@@ -1,0 +1,42 @@
+ini
+# =====================================================================
+# CONFIGURACIÓN DE .GITIGNORE PARA PIPELINE AWS S3 & PANDAS
+# =====================================================================
+
+# 1. Entornos Virtuales de Python (Archivos locales pesados)
+# ---------------------------------------------------------------------
+.venv/
+env/
+venv/
+ENV/
+bin/
+lib/
+include/
+share/
+pyvenv.cfg
+
+# 2. Archivos de Configuración y Seguridad (¡EVITA FILTRAR CREDENCIALES!)
+# ---------------------------------------------------------------------
+.aws/
+credentials
+config
+*.pem
+*.ppk
+*.key
+.env
+.secrets
+
+# 3. Caché de Ejecución de Python y Compilación
+# ---------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 4. Archivos Temporales del Sistema Operativo y del IDE
+# ---------------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+*.log
